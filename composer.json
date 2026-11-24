@@ -24,7 +24,7 @@
         ]
     },
     "require": {
-        "prolificjones/npm-plugin-installer": "^0.0.1"
+        "prolificjones/npm-plugin-installer": "^0.0"
     },
     "config": {
         "allow-plugins": {

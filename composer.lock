@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "751004e4a80cffbe7e3c6fd0191301ad",
+    "content-hash": "c4e9d97f419085a4e9d4a91dcc363e50",
     "packages": [
         {
             "name": "prolificjones/npm-plugin-installer",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prolificjones82/npm-plugin-installer.git",
-                "reference": "7ce92cadfd5816f24f83753e77e33ce6c5eacc06"
+                "reference": "1d6578bd08053049129a44db2c505671a004ab6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prolificjones82/npm-plugin-installer/zipball/7ce92cadfd5816f24f83753e77e33ce6c5eacc06",
-                "reference": "7ce92cadfd5816f24f83753e77e33ce6c5eacc06",
+                "url": "https://api.github.com/repos/prolificjones82/npm-plugin-installer/zipball/1d6578bd08053049129a44db2c505671a004ab6c",
+                "reference": "1d6578bd08053049129a44db2c505671a004ab6c",
                 "shasum": ""
             },
             "require": {
@@ -43,9 +43,9 @@
             "description": "Installs npm packages and patches package.json after composer install/update.",
             "support": {
                 "issues": "https://github.com/prolificjones82/npm-plugin-installer/issues",
-                "source": "https://github.com/prolificjones82/npm-plugin-installer/tree/0.0.1"
+                "source": "https://github.com/prolificjones82/npm-plugin-installer/tree/0.0.2"
             },
-            "time": "2026-11-24T14:45:48+00:00"
+            "time": "2026-11-24T14:53:33+00:00"
         }
     ],
     "packages-dev": [],
