@@ -1,0 +1,19 @@
+{
+    "name": "limegreentangerine/svelte-builder",
+    "type": "library",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Limegreentangerine\\SvelteBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lee Jones",
+            "email": "mail@leejones.me.uk"
+        }
+    ],
+    "bin": [
+		"bin/build-svelte-component"
+	]
+}
