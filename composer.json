@@ -15,14 +15,8 @@
         }
     ],
     "bin": [
-        "bin/sb-post-install",
         "bin/build-svelte-component"
     ],
-    "scripts": {
-        "post-install-cmd": [
-            "./vendor/bin/sb-post-install"
-        ]
-    },
     "require": {
         "prolificjones/npm-plugin-installer": "^0.0"
     },
