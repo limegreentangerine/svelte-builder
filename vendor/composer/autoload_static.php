@@ -10,6 +10,7 @@ class ComposerStaticInit5c720f359bb134645e1696a0a81fa33d
         'L' =>
         array (
             'Limegreentangerine\\SvelteBuilder\\' => 33,
+            'LeeJones\\NpmInstaller\\' => 22,
         ),
     );
 
@@ -17,6 +18,10 @@ class ComposerStaticInit5c720f359bb134645e1696a0a81fa33d
         'Limegreentangerine\\SvelteBuilder\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'LeeJones\\NpmInstaller\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/prolificjones/npm-plugin-installer/src',
         ),
     );
 

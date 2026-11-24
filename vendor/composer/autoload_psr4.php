@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Limegreentangerine\\SvelteBuilder\\' => array($baseDir . '/src'),
+    'LeeJones\\NpmInstaller\\' => array($vendorDir . '/prolificjones/npm-plugin-installer/src'),
 );

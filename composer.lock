@@ -4,8 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04f8c8f6f2aecb6301a9b26f96a6289e",
-    "packages": [],
+    "content-hash": "751004e4a80cffbe7e3c6fd0191301ad",
+    "packages": [
+        {
+            "name": "prolificjones/npm-plugin-installer",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prolificjones82/npm-plugin-installer.git",
+                "reference": "7ce92cadfd5816f24f83753e77e33ce6c5eacc06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prolificjones82/npm-plugin-installer/zipball/7ce92cadfd5816f24f83753e77e33ce6c5eacc06",
+                "reference": "7ce92cadfd5816f24f83753e77e33ce6c5eacc06",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "LeeJones\\NpmInstaller\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "LeeJones\\NpmInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Installs npm packages and patches package.json after composer install/update.",
+            "support": {
+                "issues": "https://github.com/prolificjones82/npm-plugin-installer/issues",
+                "source": "https://github.com/prolificjones82/npm-plugin-installer/tree/0.0.1"
+            },
+            "time": "2026-11-24T14:45:48+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",

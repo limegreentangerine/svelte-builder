@@ -15,6 +15,37 @@
         }
     ],
     "bin": [
-		"bin/build-svelte-component"
-	]
+        "bin/sb-post-install",
+        "bin/build-svelte-component"
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "./vendor/bin/sb-post-install"
+        ]
+    },
+    "require": {
+        "prolificjones/npm-plugin-installer": "^0.0.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "prolificjones/npm-plugin-installer": true
+        }
+    },
+    "extra": {
+        "npm-installer": {
+            "manager": "npm",
+            "dev-packages": [
+                "vite",
+                "typescript"
+            ],
+            "package-json": {
+                "scripts": {
+                    "build": "vite build"
+                },
+                "browserslist": [
+                    "defaults"
+                ]
+            }
+        }
+    }
 }
