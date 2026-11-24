@@ -16,30 +16,5 @@
     ],
     "bin": [
         "bin/build-svelte-component"
-    ],
-    "require": {
-        "prolificjones/npm-plugin-installer": "^0.0"
-    },
-    "config": {
-        "allow-plugins": {
-            "prolificjones/npm-plugin-installer": true
-        }
-    },
-    "extra": {
-        "npm-installer": {
-            "manager": "npm",
-            "dev-packages": [
-                "vite",
-                "typescript"
-            ],
-            "package-json": {
-                "scripts": {
-                    "build": "vite build"
-                },
-                "browserslist": [
-                    "defaults"
-                ]
-            }
-        }
-    }
+    ]
 }
