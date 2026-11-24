@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4e9d97f419085a4e9d4a91dcc363e50",
+    "content-hash": "286acffa4195de17ce78e097d3cc1b37",
     "packages": [
         {
             "name": "prolificjones/npm-plugin-installer",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prolificjones82/npm-plugin-installer.git",
-                "reference": "1d6578bd08053049129a44db2c505671a004ab6c"
+                "reference": "e48e728feb42ba62a724a1c2b045fd77f17432e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prolificjones82/npm-plugin-installer/zipball/1d6578bd08053049129a44db2c505671a004ab6c",
-                "reference": "1d6578bd08053049129a44db2c505671a004ab6c",
+                "url": "https://api.github.com/repos/prolificjones82/npm-plugin-installer/zipball/e48e728feb42ba62a724a1c2b045fd77f17432e8",
+                "reference": "e48e728feb42ba62a724a1c2b045fd77f17432e8",
                 "shasum": ""
             },
             "require": {
@@ -29,11 +29,11 @@
             },
             "type": "composer-plugin",
             "extra": {
-                "class": "LeeJones\\NpmInstaller\\Plugin"
+                "class": "ProlificJones\\NpmInstaller\\Plugin"
             },
             "autoload": {
                 "psr-4": {
-                    "LeeJones\\NpmInstaller\\": "src/"
+                    "ProlificJones\\NpmInstaller\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -43,9 +43,9 @@
             "description": "Installs npm packages and patches package.json after composer install/update.",
             "support": {
                 "issues": "https://github.com/prolificjones82/npm-plugin-installer/issues",
-                "source": "https://github.com/prolificjones82/npm-plugin-installer/tree/0.0.2"
+                "source": "https://github.com/prolificjones82/npm-plugin-installer/tree/0.0.3"
             },
-            "time": "2026-11-24T14:53:33+00:00"
+            "time": "2026-11-24T15:04:24+00:00"
         }
     ],
     "packages-dev": [],
