@@ -20,7 +20,7 @@
     ],
     "scripts": {
         "post-install-cmd": [
-            "./bin/bsc-post-install"
+            "./vendor/bin/bsc-post-install"
         ]
     }
 }
