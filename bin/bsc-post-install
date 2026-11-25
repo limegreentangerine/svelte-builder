@@ -49,6 +49,7 @@ echo "Installing svelte resources..." . PHP_EOL;
 
 $resourcesFolder = $composerPath . DIRECTORY_SEPARATOR . 'resources/root';
 $filesToInstall = [
+    'vite.config.mjs',
     'tsconfig.json',
     'svelte.config.js',
     'svelte.d.ts'
