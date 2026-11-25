@@ -18,9 +18,27 @@
         "bin/build-svelte-component"
     ],
     "require": {
-        "composer-plugin-api": "^2.0"
+        "composer-plugin-api": "^2.0",
+        "prolificjones/npm-plugin-installer": "^0.0.3"
     },
     "extra": {
-        "class": "Limegreentangerine\\SvelteBuilder\\Installer"
+        "class": "Limegreentangerine\\SvelteBuilder\\Installer",
+        "npm-plugin-installer": {
+            "manager": "npm",
+            "package-json": {
+                "scripts": {
+                    "build": "vite build",
+                    "dev": "vite"
+                },
+                "engines": {
+                    "node": "^24.15"
+                }
+            }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "prolificjones/npm-plugin-installer": true
+        }
     }
 }
