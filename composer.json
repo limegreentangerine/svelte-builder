@@ -1,6 +1,6 @@
 {
     "name": "limegreentangerine/svelte-builder",
-    "type": "library",
+    "type": "composer-plugin",
     "license": "MIT",
     "minimum-stability": "stable",
     "autoload": {
@@ -15,15 +15,12 @@
         }
     ],
     "bin": [
-        "bin/build-svelte-component",
-        "bin/bsc-post-install"
+        "bin/build-svelte-component"
     ],
-    "scripts": {
-        "post-package-install": [
-            "@php bin/bsc-post-install"
-        ],
-        "post-package-update": [
-            "@php bin/bsc-post-install"
-        ]
+    "require": {
+        "composer-plugin-api": "^2.0"
+    },
+    "extra": {
+        "class": "Limegreentangerine\\SvelteBuilder\\Installer"
     }
 }
