@@ -19,8 +19,11 @@
         "bin/bsc-post-install"
     ],
     "scripts": {
-        "post-install-cmd": [
-            "./vendor/bin/bsc-post-install"
+        "post-package-install": [
+            "@php bin/bsc-post-install"
+        ],
+        "post-package-update": [
+            "@php bin/bsc-post-install"
         ]
     }
 }
