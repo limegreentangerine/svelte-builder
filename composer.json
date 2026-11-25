@@ -15,6 +15,12 @@
         }
     ],
     "bin": [
-        "bin/build-svelte-component"
-    ]
+        "bin/build-svelte-component",
+        "bin/bsc-post-install"
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "./bin/bsc-post-install"
+        ]
+    }
 }

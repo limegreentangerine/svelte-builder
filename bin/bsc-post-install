@@ -1,0 +1,68 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+$projectRoot = getcwd();
+$composerPath = realpath(__DIR__ . '/..');
+
+// install required npm packages
+$commands = [
+    [
+        'npm',
+        'install',
+        '--loglevel=error',
+        '--save-dev',
+		'eslint-plugin-svelte',
+		'globals',
+		'prettier',
+		'prettier-plugin-svelte',
+		'svelte',
+		'svelte-check',
+		'typescript',
+		'typescript-eslint',
+		'vite',
+    ]
+];
+
+echo "Installing npm packages..." . PHP_EOL;
+
+foreach ($commands as $command) {
+    $process = proc_open(
+        $command,
+        [0 => STDIN, 1 => STDOUT, 2 => STDERR],
+        $pipes,
+        $projectRoot
+    );
+
+    if (!is_resource($process)) {
+        throw new RuntimeException('Unable to start npm.');
+    }
+
+    $exitCode = proc_close($process);
+    if ($exitCode !== 0) {
+        exit($exitCode);
+    }
+}
+
+$resourcesFolder = $composerPath . DIRECTORY_SEPARATOR . 'resources/root';
+$filesToInstall = [
+    'tsconfig.json',
+    'svelte.config.js',
+    'svelte.d.ts'
+];
+
+foreach ($filesToInstall as $fti) {
+    $source = $resourcesFolder . DIRECTORY_SEPARATOR . $fti;
+    $destination = $projectRoot . DIRECTORY_SEPARATOR . $fti;
+
+    if (file_exists($source) && !file_exists($destination)) {
+        if (!copy($source, $destination)) {
+            fwrite(STDERR, "Unable to copy: {$source}\n");
+        } else {
+            unlink($source);
+        }
+    } else {
+        echo "{$destination} exists -- (ignored)\n";
+    }
+}
