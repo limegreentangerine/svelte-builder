@@ -4,50 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cc03581ec1d7ad73151fda3a21f2538",
-    "packages": [
-        {
-            "name": "prolificjones/npm-plugin-installer",
-            "version": "0.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/prolificjones82/npm-plugin-installer.git",
-                "reference": "e48e728feb42ba62a724a1c2b045fd77f17432e8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/prolificjones82/npm-plugin-installer/zipball/e48e728feb42ba62a724a1c2b045fd77f17432e8",
-                "reference": "e48e728feb42ba62a724a1c2b045fd77f17432e8",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^2.0",
-                "php": ">=8.1"
-            },
-            "require-dev": {
-                "composer/composer": "^2.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "ProlificJones\\NpmInstaller\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "ProlificJones\\NpmInstaller\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Installs npm packages and patches package.json after composer install/update.",
-            "support": {
-                "issues": "https://github.com/prolificjones82/npm-plugin-installer/issues",
-                "source": "https://github.com/prolificjones82/npm-plugin-installer/tree/0.0.3"
-            },
-            "time": "2026-11-24T15:04:24+00:00"
-        }
-    ],
+    "content-hash": "6f8b7c3ab9531bf89b69a680ec070a55",
+    "packages": [],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",

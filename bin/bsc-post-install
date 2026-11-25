@@ -45,6 +45,8 @@ foreach ($commands as $command) {
     }
 }
 
+echo "Installing svelte resources..." . PHP_EOL;
+
 $resourcesFolder = $composerPath . DIRECTORY_SEPARATOR . 'resources/root';
 $filesToInstall = [
     'tsconfig.json',
@@ -66,3 +68,39 @@ foreach ($filesToInstall as $fti) {
         echo "{$destination} exists -- (ignored)\n";
     }
 }
+
+echo "Configuring svelte build scripts..." . PHP_EOL;
+
+$packageJsonPath = $projectRoot . DIRECTORY_SEPARATOR . 'package.json';
+
+// Read the existing package.json
+if (!file_exists($packageJsonPath)) {
+    echo "package.json not found at {$packageJsonPath}" . PHP_EOL;
+    return;
+}
+
+$packageJson = json_decode(file_get_contents($packageJsonPath), true);
+
+if (!is_array($packageJson)) {
+    echo "Failed to parse package.json" . PHP_EOL;
+    return;
+}
+
+// Ensure scripts section exists
+if (!isset($packageJson['scripts'])) {
+    $packageJson['scripts'] = [];
+}
+
+// Add or modify scripts
+$packageJson['scripts']['dev'] = 'vite';
+$packageJson['scripts']['build'] = 'vite build';
+$packageJson['scripts']['lint'] = 'eslint src --fix';
+$packageJson['scripts']['check'] = 'svelte-check --tsconfig ./tsconfig.json';
+
+// Write it back with nice formatting
+file_put_contents(
+    $packageJsonPath,
+    json_encode($packageJson, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . PHP_EOL
+);
+
+echo "Updated package.json" . PHP_EOL;
